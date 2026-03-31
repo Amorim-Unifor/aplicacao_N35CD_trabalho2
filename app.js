@@ -23,8 +23,9 @@ elDecrement.addEventListener("click", () => {
 
 elToggleTheme.addEventListener("click", () => {
   state.dark = !state.dark;
-  document.documentElement.style.setProperty("--bg", state.dark ? "#0b1220" : "#f8fafc");
-  document.documentElement.style.setProperty("--text", state.dark ? "#e2e8f0" : "#0f172a");
+  document.documentElement.style.setProperty("--bg", state.dark ? "#16189b" : "#f8fafc");
+  document.documentElement.style.setProperty("btn-toggle-theme", state.dark ? "#16189b" : "#f8fafc");
+  document.documentElement.style.setProperty("--text", state.dark ? "#e2e8f0" : "#e0e710");
   elTitle.textContent = state.dark ? "Mini App – Modo Escuro" : "Mini App – GitFlow";
   elToggleTheme.setAttribute("aria-pressed", String(state.dark));
 });
