@@ -5,20 +5,20 @@ const elDecrement = document.getElementById("btn-decrement");
 const elToggleTheme = document.getElementById("btn-toggle-theme");
 const elTitle = document.getElementById("title");
 
-function setCount(newValue) {
+function setCount2(newValue) {
   elCount.textContent = String(newValue);
 }
 
 let state = { count: 0, dark: false };
 
 elIncrement.addEventListener("click", () => {
-  state.count += 1;
-  setCount(state.count);
+  state.count += 2;
+  setCount2(state.count);
 });
 
 elDecrement.addEventListener("click", () => {
-  state.count -= 1;
-  setCount(state.count);
+  state.count -= 2;
+  setCount2(state.count);
 });
 
 elToggleTheme.addEventListener("click", () => {
